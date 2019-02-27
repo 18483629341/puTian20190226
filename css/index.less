@@ -1,0 +1,212 @@
+@import 'common.css';
+@mainTextColor:#333333;
+@subTextColor:#666666;
+@lightTextColor:#999999;
+@titleFontSize:18px;
+@perFontSize:14px;
+@splitColor:#e5ebf2;
+@activeColor:#24a2f2;
+@sprite: url('../img/sprite.png') no-repeat;
+
+.header{
+	width: 100%;
+	height:65px;
+	border: 1px solid red;
+	background: url(../img/navbarBack.png) repeat-x;
+	padding:9.5px 16px ;
+    .headerMain{
+		float: left;
+		width:248px;
+		height: 100%;
+		background: url(../img/homelogo.png) no-repeat;
+	}
+	
+}
+.icon{
+	display: inline-block;
+	width:26px;
+	height:24px;
+	background: url(../img/sprite.png) no-repeat;
+}
+.headeRight{
+	float: right;
+}
+.themeList{
+	float: right;
+	height: 100%;
+	.themeLi{
+		min-width:62px;
+		height: 100%;
+		display: inline-block;
+		text-align: center;
+		padding: 0 10px;
+	}
+	.iconText{
+	   color:#fff;
+	   font-size: 16px;
+	}
+	.icon_Home{
+		background-position: -90px 0;
+	}
+	
+}
+.main{
+	width: 1840px;
+	margin:0 auto;
+	padding-bottom:50px;
+	//overflow: hidden;
+	border: 1px solid blue;
+}
+.timeDiv{
+	width: 100%;
+	height:70px; 
+	border: 1px solid yellowgreen;
+}
+.firstRow{
+	width: 100%;
+	height:490px;
+	margin-bottom: 20px; 
+	border: 1px solid yellowgreen;
+	.listDiv:first-child,.listDiv:last-child{
+		flex: 1;
+		height:100%; 
+		border: 1px solid green;
+	}
+	.listDiv:nth-child(2){
+		width: 760px;
+		height:100%; 
+		border: 1px solid yellow;
+	}
+}
+
+.listDiv{
+	background: #fff;
+	position: relative;
+}
+.listDiv+.listDiv{
+	margin-left:20px;
+}
+.secondRow{
+	height:474px; 
+	border: 1px solid yellowgreen;
+	.listDiv:first-child,.listDiv:last-child{
+		flex: 1;
+		height:100%; 
+		border: 1px solid yellow;
+	}
+}
+/***header***/
+
+/***main***/
+.selfTabs{
+	height:48px;
+	li.selfTab{
+		border-bottom: 3px solid #e9f3fd;
+	}
+	li.selfTab:hover{
+		//border:none;
+		.RightTableDiv{
+			padding:0 20px!important;
+			display: none;
+		}
+	}
+	li.active>a{
+		border-bottom: 3px solid #1d95e0;
+	}
+	li+li{
+	  margin-left: 0;	
+	} 
+	li.selfTab>a{
+	   font-weight: 700;
+	   font-size: @titleFontSize;
+	   color:@subTextColor;
+	   background: transparent;
+	   border-radius: 0;
+	}
+	li.selfTab>a:focus,li.selfTab>a:hover,
+	li.active>a:focus,li.active>a:hover{
+		background-color: rgba(255, 255, 255, .5);
+	}
+	li.active>a{
+		color:#1d95e0!important;
+		background: transparent;
+	}
+}
+
+.moreDiv{
+	height:35px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 46px;
+	padding: 14px 0;
+ }
+
+ .more{
+	 margin-top: 2px;
+	 position: relative;
+	 font-size: @perFontSize;
+	 line-height: @perFontSize;
+	 color:#666;
+	 padding-right:20px;
+	text-align: right;
+	
+	 .moreIcon{
+		 display: inline-block;
+		 width: 11px;
+		 height:10px;
+		 background: @sprite;
+		 background-position: -24px -32px;
+		 margin-left: -2px;
+	 }
+ }
+ .more:hover{
+	 color: rgb(67,152,238);
+	 .moreIcon{
+		 //background: @sprite;
+		 background-position: -36px -32px;
+	 }
+ }
+ 
+.RightTableDiv{
+	padding:0 20px!important;
+	display: none;
+}
+.headLineList{
+	overflow: hidden;
+	padding-top:3px;
+ }
+ .headLineLi{
+	 width: 100%;
+	 height: 42px;
+	 padding: 10px 0;
+	 .lineMarkIcon{
+		 width:8px;
+		 height:8px;
+		 margin-right: 10px;
+		 margin-top:7px; 
+		 background: @sprite;
+		 background-position: -12px -32px;
+	 }
+	 .headLine{
+		 width:220px;
+		 line-height: 22px;
+		 overflow: hidden;
+		 text-overflow: ellipsis;
+		 -o-text-overflow: ellipsis;
+		 -webkit-text-overflow: ellipsis;
+		 -moz-text-overflow: ellipsis;
+		 white-space: nowrap;	
+		 color: @mainTextColor;
+	 } 
+	 .date{
+		 width: 80px;
+		 line-height: 22px;
+		 text-align: right;
+		 color: @lightTextColor;
+	 }
+ }
+ .headLineLi+.headLineLi{
+	 border-top:1px dashed @splitColor;
+ }
+

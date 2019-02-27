@@ -1,0 +1,193 @@
+@import 'common.css';
+.header {
+  width: 100%;
+  height: 65px;
+  border: 1px solid red;
+  background: url(../img/navbarBack.png) repeat-x;
+  padding: 9.5px 16px ;
+}
+.header .headerMain {
+  float: left;
+  width: 248px;
+  height: 100%;
+  background: url(../img/homelogo.png) no-repeat;
+}
+.icon {
+  display: inline-block;
+  width: 26px;
+  height: 24px;
+  background: url(../img/sprite.png) no-repeat;
+}
+.headeRight {
+  float: right;
+}
+.themeList {
+  float: right;
+  height: 100%;
+}
+.themeList .themeLi {
+  min-width: 62px;
+  height: 100%;
+  display: inline-block;
+  text-align: center;
+  padding: 0 10px;
+}
+.themeList .iconText {
+  color: #fff;
+  font-size: 16px;
+}
+.themeList .icon_Home {
+  background-position: -90px 0;
+}
+.main {
+  width: 1840px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  border: 1px solid blue;
+}
+.timeDiv {
+  width: 100%;
+  height: 70px;
+  border: 1px solid yellowgreen;
+}
+.firstRow {
+  width: 100%;
+  height: 490px;
+  margin-bottom: 20px;
+  border: 1px solid yellowgreen;
+}
+.firstRow .listDiv:first-child,
+.firstRow .listDiv:last-child {
+  flex: 1;
+  height: 100%;
+  border: 1px solid green;
+}
+.firstRow .listDiv:nth-child(2) {
+  width: 760px;
+  height: 100%;
+  border: 1px solid yellow;
+}
+.listDiv {
+  background: #fff;
+  position: relative;
+}
+.listDiv + .listDiv {
+  margin-left: 20px;
+}
+.secondRow {
+  height: 474px;
+  border: 1px solid yellowgreen;
+}
+.secondRow .listDiv:first-child,
+.secondRow .listDiv:last-child {
+  flex: 1;
+  height: 100%;
+  border: 1px solid yellow;
+}
+/***header***/
+/***main***/
+.selfTabs {
+  height: 48px;
+}
+.selfTabs li.selfTab {
+  border-bottom: 3px solid #e9f3fd;
+}
+.selfTabs li.selfTab:hover .RightTableDiv {
+  padding: 0 20px!important;
+  display: none;
+}
+.selfTabs li.active > a {
+  border-bottom: 3px solid #1d95e0;
+}
+.selfTabs li + li {
+  margin-left: 0;
+}
+.selfTabs li.selfTab > a {
+  font-weight: 700;
+  font-size: 18px;
+  color: #666666;
+  background: transparent;
+  border-radius: 0;
+}
+.selfTabs li.selfTab > a:focus,
+.selfTabs li.selfTab > a:hover,
+.selfTabs li.active > a:focus,
+.selfTabs li.active > a:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.selfTabs li.active > a {
+  color: #1d95e0!important;
+  background: transparent;
+}
+.moreDiv {
+  height: 35px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 46px;
+  padding: 14px 0;
+}
+.more {
+  margin-top: 2px;
+  position: relative;
+  font-size: 14px;
+  line-height: 14px;
+  color: #666;
+  padding-right: 20px;
+  text-align: right;
+}
+.more .moreIcon {
+  display: inline-block;
+  width: 11px;
+  height: 10px;
+  background: url('../img/sprite.png') no-repeat;
+  background-position: -24px -32px;
+  margin-left: -2px;
+}
+.more:hover {
+  color: #4398ee;
+}
+.more:hover .moreIcon {
+  background-position: -36px -32px;
+}
+.RightTableDiv {
+  padding: 0 20px!important;
+  display: none;
+}
+.headLineList {
+  overflow: hidden;
+  padding-top: 3px;
+}
+.headLineLi {
+  width: 100%;
+  height: 42px;
+  padding: 10px 0;
+}
+.headLineLi .lineMarkIcon {
+  width: 8px;
+  height: 8px;
+  margin-right: 10px;
+  margin-top: 7px;
+  background: url('../img/sprite.png') no-repeat;
+  background-position: -12px -32px;
+}
+.headLineLi .headLine {
+  width: 220px;
+  line-height: 22px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -webkit-text-overflow: ellipsis;
+  -moz-text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #333333;
+}
+.headLineLi .date {
+  width: 80px;
+  line-height: 22px;
+  text-align: right;
+  color: #999999;
+}
+.headLineLi + .headLineLi {
+  border-top: 1px dashed #e5ebf2;
+}
