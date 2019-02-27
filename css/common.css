@@ -1,0 +1,49 @@
+html,
+body,
+div,
+p,
+span,
+a,
+img,
+ul,
+li,
+b,
+i,
+dl,
+dt,
+dd {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+.flexBlock {
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+}
+.flex1 {
+  flex: 1;
+}
+html,
+body {
+  width: 100%;
+  min-width: 1366px;
+  height: 100%;
+  box-sizing: content-box;
+}
+p,
+img {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #3f3f3f;
+}
+body {
+  font-family: "Microsoft YaHei";
+  font-size: 14px;
+  flex-direction: column;
+}

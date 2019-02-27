@@ -1,44 +1,9 @@
+@import 'common.css';
 @charset "utf-8";
 @activeBorder:#5bac61;
 @inputBorder:#14ee81;
-@windowMinWidth:1366px;
 @errorBorder:red;
-html,body,div,p,span,a,img,ul,li,b,i,dl,dt,dd{ margin: 0 auto; padding: 0;box-sizing: border-box;}
-.flexBlock{
-	display: flex;
-	display: -webkit-box; 
-   display: -moz-box;  
-   display: -ms-flexbox; 
-   display: -webkit-flex; 
-}
-.flex1{
-   flex: 1;
-}
-html,
-body {
-   
-    width: 100%;
-    min-width:@windowMinWidth;
-    height: 100%;
-    box-sizing: content-box;
-}
 
-p,
-img {
-    margin: 0;
-    padding: 0;
-}
-
-a {
-    text-decoration: none;
-    color: #3f3f3f;
-}
-body{
-    font-family: "Microsoft YaHei";
-    font-size: 14px;
-  
-    flex-direction:column;
-}
 .header {
     width:100%;
     //overflow: hidden;
@@ -74,6 +39,9 @@ body{
     line-height: 148px;
     text-align: center;
     color:#666;
+    .inner+.inner{
+        margin-left:20px;
+    }
 }
 .themeBox{
     max-width:750px;
@@ -127,17 +95,17 @@ body{
         .inputP.active, .inputP:hover{
             border:1px solid @activeBorder;
             input{
-                border-left:1px solid @activeBorder;
+               // border-left:1px solid @activeBorder;
             }
             
         }
        
-        .user:hover {
+        /*.user:hover {
             background: url(../img/user_on.png) center left no-repeat;
         }
         .password:hover {
             background: url(../img/password_on.png) center left no-repeat;
-        }
+        }*/
        
         
     }
@@ -188,6 +156,7 @@ body{
     height:21px;
     top: 9px;
     background: url(../img/rdo.png) no-repeat;
+    cursor: pointer;
 }
 
 .checkBox.active{
@@ -249,7 +218,8 @@ input::-internal-autofill-selected{
     height: 100%;
     border: none;
     cursor: pointer;
-    background: #f2ae1b;
+    background: url(../img/login_btn.png) repeat-x;
+    background-size:100%;
     color: #fff;
     font-size: 18px;
     line-height: 38px;

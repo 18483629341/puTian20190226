@@ -11,15 +11,26 @@ $(function () {
 window.onresize = function () {
 	autoFit();
 }
+/**  当点击登录按钮  或 按enter 键时   */
 $('body').on('click', '#login', function () {
+	postFun()
+})
+$("body").keydown(function (e) {
+	var e = window.event ? window.event : e;    
+	var keyCode = e.which ? e.which : e.keyCode;     
+	if (keyCode == 13) { //按下的键盘序号为13，即为‘enter’键时     	
+		postFun()   
+	}  
+});
+
+function postFun(){
 	var flag = valid();
 	if (flag) { //如果flag为true，则发送信息
 		console.log('表单验证通过', postObj);
 		// $.post('url',{info:postObj},function(data){//！！！！！这里需要后台添加
 		//})
 	}
-})
-
+}
 function valid() { //格式验证，以及获取输入框信息
 
 	/*   获取输入框信息   */
@@ -99,7 +110,7 @@ function autoFit() {
 function resize() {
 	var winratio = $(window).width() / 1920;
 	var height = $(window).height();
-	console.log(winratio);
+	//console.log(winratio);
     if(winratio<1){
 		$('.header').css({
 			height:150*winratio + "px"
@@ -125,13 +136,7 @@ function resize() {
 			transformOrigin: "left center"
 		});
 	}
-	// else{
-	// 	//这里有点问题
-	// 	$('.html1').css({
-	// 		transform: "scale(" + winratio + ")",
-	// 		transformOrigin: "left top"
-	// 	})
-	// }
+	
 	
 	
 	
