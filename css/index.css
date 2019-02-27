@@ -1,4 +1,8 @@
 @import 'common.css';
+html,
+body {
+  min-width: 1920px;
+}
 .header {
   width: 100%;
   height: 65px;
@@ -35,9 +39,34 @@
 .themeList .iconText {
   color: #fff;
   font-size: 16px;
+  margin-top: -5px;
 }
-.themeList .icon_Home {
+.icon_Home {
   background-position: -90px 0;
+}
+.icon_theme1 {
+  background-position: -120px 0;
+}
+.icon_theme2 {
+  background-position: -150px 0;
+}
+.icon_theme3 {
+  background-position: -180px 0;
+}
+.icon_theme4 {
+  background-position: -210px 0;
+}
+.icon_theme5 {
+  background-position: -240px 0;
+}
+.icon_theme6 {
+  background-position: -210px -40px;
+}
+.icon_theme7 {
+  background-position: -150px -40px;
+}
+.icon_theme8 {
+  background-position: -180px -40px;
 }
 .main {
   width: 1840px;
@@ -68,6 +97,7 @@
   border: 1px solid yellow;
 }
 .listDiv {
+  padding: 0 30px;
   background: #fff;
   position: relative;
 }
@@ -85,19 +115,40 @@
   border: 1px solid yellow;
 }
 /***header***/
+.headerRight {
+  margin-left: 35px;
+  float: right;
+  padding: 12px 0;
+  line-height: 16px;
+  color: #fff;
+}
+.headerRight .text {
+  margin-right: 6px;
+}
+.headerRight .downIcon {
+  width: 8px;
+  height: 6px;
+  background-position: -50px 0;
+  position: relative;
+  top: -2px;
+}
 /***main***/
 .selfTabs {
-  height: 48px;
+  height: 60px;
 }
 .selfTabs li.selfTab {
-  border-bottom: 3px solid #e9f3fd;
+  height: 100%;
+  line-height: 38px;
+  border-bottom: 2px solid #f0f0f0;
 }
 .selfTabs li.selfTab:hover .RightTableDiv {
   padding: 0 20px!important;
   display: none;
 }
 .selfTabs li.active > a {
-  border-bottom: 3px solid #1d95e0;
+  height: 59px;
+  line-height: 37px;
+  border-bottom: 4px solid #35994a;
 }
 .selfTabs li + li {
   margin-left: 0;
@@ -105,7 +156,7 @@
 .selfTabs li.selfTab > a {
   font-weight: 700;
   font-size: 18px;
-  color: #666666;
+  color: #838282;
   background: transparent;
   border-radius: 0;
 }
@@ -116,7 +167,7 @@
   background-color: rgba(255, 255, 255, 0.5);
 }
 .selfTabs li.active > a {
-  color: #1d95e0!important;
+  color: #333333!important;
   background: transparent;
 }
 .moreDiv {
@@ -125,7 +176,7 @@
   top: 0;
   right: 0;
   height: 46px;
-  padding: 14px 0;
+  padding: 20px 20px 30px 0;
 }
 .more {
   margin-top: 2px;
@@ -141,7 +192,13 @@
   width: 11px;
   height: 10px;
   background: url('../img/sprite.png') no-repeat;
-  background-position: -24px -32px;
+  background-position: -79px -40px;
+  margin-left: -2px;
+}
+.waitIcon {
+  width: 22px;
+  height: 6px;
+  background-position: -60px 0;
   margin-left: -2px;
 }
 .more:hover {
@@ -160,8 +217,8 @@
 }
 .headLineLi {
   width: 100%;
-  height: 42px;
-  padding: 10px 0;
+  height: 48px;
+  padding: 13px 0;
 }
 .headLineLi .lineMarkIcon {
   width: 8px;
@@ -169,10 +226,10 @@
   margin-right: 10px;
   margin-top: 7px;
   background: url('../img/sprite.png') no-repeat;
-  background-position: -12px -32px;
+  background-position: -40px 0;
 }
 .headLineLi .headLine {
-  width: 220px;
+  width: 300px;
   line-height: 22px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -190,4 +247,13 @@
 }
 .headLineLi + .headLineLi {
   border-top: 1px dashed #e5ebf2;
+}
+.waterStatus {
+  padding-top: 24px;
+}
+.waterStatus img {
+  display: block;
+  width: 700px;
+  margin: 0 auto;
+  height: auto;
 }
