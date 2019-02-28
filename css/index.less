@@ -9,11 +9,11 @@
 @sprite: url('../img/sprite.png') no-repeat;
 html,body{
 	min-width: 1920px;
+	background-color: #f5f7f5;
 }
 .header{
 	width: 100%;
 	height:65px;
-	border: 1px solid red;
 	background: url(../img/navbarBack.png) repeat-x;
 	padding:9.5px 16px ;
     .headerMain{
@@ -42,6 +42,15 @@ html,body{
 		display: inline-block;
 		text-align: center;
 		padding: 0 10px;
+	}
+	.themeLi.active{
+		position: relative;
+	}
+	.themeLi.active:after{
+		position: absolute;
+		content: '',
+		
+
 	}
 	.iconText{
 	   color:#fff;
@@ -86,27 +95,22 @@ html,body{
 	margin:0 auto;
 	padding-bottom:50px;
 	//overflow: hidden;
-	border: 1px solid blue;
 }
 .timeDiv{
 	width: 100%;
 	height:70px; 
-	border: 1px solid yellowgreen;
 }
 .firstRow{
 	width: 100%;
 	height:490px;
 	margin-bottom: 20px; 
-	border: 1px solid yellowgreen;
 	.listDiv:first-child,.listDiv:last-child{
 		flex: 1;
 		height:100%; 
-		border: 1px solid green;
 	}
 	.listDiv:nth-child(2){
 		width: 760px;
 		height:100%; 
-		border: 1px solid yellow;
 	}
 }
 
@@ -120,11 +124,9 @@ html,body{
 }
 .secondRow{
 	height:474px; 
-	border: 1px solid yellowgreen;
 	.listDiv:first-child,.listDiv:last-child{
 		flex: 1;
 		height:100%; 
-		border: 1px solid yellow;
 	}
 }
 /***header***/
@@ -294,8 +296,8 @@ html,body{
 		 color: @lightTextColor;
 	 }
  }
- .headLineLi+.headLineLi{
-	 border-top:1px dashed @splitColor;
+ .headLineLi{
+	 border-bottom:1px dashed @splitColor;
  }
 .waterStatus{
 	padding-top: 24px;
@@ -364,9 +366,7 @@ html,body{
 	.point{
 		height:100%;
 		border-radius: 5px;
-		//border: 1px solid red;
 	}
-
 }
 @greenColor:#5dc55f;
 @warnColor:#ed654a;
@@ -385,7 +385,7 @@ html,body{
 		left:88.9%;
 	}
 	.promptBox{
-		margin-left:88.9%;
+		right: 11.1%;
 	}
 }
 .badType{
@@ -394,7 +394,7 @@ html,body{
 		color:@warnColor;
 	}
 	.point{
-		width:3%;
+		width:2.5%;
 		background: @warnColor;
 	}
 	.iconMark.lastYear{
@@ -408,14 +408,24 @@ html,body{
 	}
 }
 .promptBox{
+	position: absolute;
 	width: 60px;
 	height: 38px;
 	background: @sprite no-repeat;
-	background-position:-240px -40px;
+	background-position: -270px 0;
+    padding-top: 8px;
+	text-align: center;
+	top: 32px;
 	.promptText{
+		width: 60px;
 		color:#ed654a;
-	}
-	
+		height:30px;
+		line-height:30px;
+		text-align: center;
+	}	
+}
+.promptBox.right{
+	background-position: -330px 0;
 }
 .iconMark{
 	position:absolute;
@@ -429,6 +439,7 @@ html,body{
 	top:0;
 }
 .iconMark.wantPoint{
+	// margin-left:0;
 	background-position: -10px 0;
 	top:0;
 }

@@ -2,11 +2,11 @@
 html,
 body {
   min-width: 1920px;
+  background-color: #f5f7f5;
 }
 .header {
   width: 100%;
   height: 65px;
-  border: 1px solid red;
   background: url(../img/navbarBack.png) repeat-x;
   padding: 9.5px 16px ;
 }
@@ -35,6 +35,13 @@ body {
   display: inline-block;
   text-align: center;
   padding: 0 10px;
+}
+.themeList .themeLi.active {
+  position: relative;
+}
+.themeList .themeLi.active:after {
+  position: absolute;
+  content: '';
 }
 .themeList .iconText {
   color: #fff;
@@ -75,29 +82,24 @@ body {
   width: 1840px;
   margin: 0 auto;
   padding-bottom: 50px;
-  border: 1px solid blue;
 }
 .timeDiv {
   width: 100%;
   height: 70px;
-  border: 1px solid yellowgreen;
 }
 .firstRow {
   width: 100%;
   height: 490px;
   margin-bottom: 20px;
-  border: 1px solid yellowgreen;
 }
 .firstRow .listDiv:first-child,
 .firstRow .listDiv:last-child {
   flex: 1;
   height: 100%;
-  border: 1px solid green;
 }
 .firstRow .listDiv:nth-child(2) {
   width: 760px;
   height: 100%;
-  border: 1px solid yellow;
 }
 .listDiv {
   padding: 0 30px;
@@ -109,13 +111,11 @@ body {
 }
 .secondRow {
   height: 474px;
-  border: 1px solid yellowgreen;
 }
 .secondRow .listDiv:first-child,
 .secondRow .listDiv:last-child {
   flex: 1;
   height: 100%;
-  border: 1px solid yellow;
 }
 /***header***/
 .headerRight {
@@ -263,8 +263,8 @@ body {
   text-align: right;
   color: #999999;
 }
-.headLineLi + .headLineLi {
-  border-top: 1px dashed #e5ebf2;
+.headLineLi {
+  border-bottom: 1px dashed #e5ebf2;
 }
 .waterStatus {
   padding-top: 24px;
@@ -349,7 +349,7 @@ body {
   left: 88.9%;
 }
 .goodType .promptBox {
-  margin-left: 88.9%;
+  right: 11.1%;
 }
 .badType {
   margin-bottom: 7px;
@@ -358,7 +358,7 @@ body {
   color: #ed654a;
 }
 .badType .point {
-  width: 3%;
+  width: 2.5%;
   background: #ed654a;
 }
 .badType .iconMark.lastYear {
@@ -371,13 +371,24 @@ body {
   margin-left: 0;
 }
 .promptBox {
+  position: absolute;
   width: 60px;
   height: 38px;
   background: url('../img/sprite.png') no-repeat no-repeat;
-  background-position: -240px -40px;
+  background-position: -270px 0;
+  padding-top: 8px;
+  text-align: center;
+  top: 32px;
 }
 .promptBox .promptText {
+  width: 60px;
   color: #ed654a;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+.promptBox.right {
+  background-position: -330px 0;
 }
 .iconMark {
   position: absolute;
