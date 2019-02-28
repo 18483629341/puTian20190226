@@ -48,14 +48,18 @@ html,body{
 	}
 	.themeLi.active:after{
 		position: absolute;
-		content: '',
-		
-
+		content: '';
+		width:100%;
+		height:4px;
+		left: 0;
+		top: 51px;
+		background: #ffc000;
+        border-radius:2px;
 	}
 	.iconText{
 	   color:#fff;
 	   font-size: 16px;
-	   margin-top: -5px;
+	   margin-top: -2px;
 	}
 	
 	
@@ -90,6 +94,14 @@ html,body{
 .icon_theme9{
 	background-position: -210px -40px;
 }
+.icon_calendar{
+	width:16px;
+	height: 16px;
+	background-position: -90px -40px;
+	margin-right:10px;
+	top: 2px;
+    position: relative;
+}
 .main{
 	width: 1840px;
 	margin:0 auto;
@@ -99,6 +111,13 @@ html,body{
 .timeDiv{
 	width: 100%;
 	height:70px; 
+	padding:15px 0;
+	.time{
+		font-size:16px;
+		height:30px;
+		line-height:28px;
+		color:#333;
+	}
 }
 .firstRow{
 	width: 100%;
@@ -185,7 +204,7 @@ html,body{
 	li.active>a{
 		.tabText{
 			height:59px;
-			line-height:57px;
+			line-height:59px;
 			border-bottom: 4px solid #35994a;
 		}
 		
@@ -332,7 +351,7 @@ html,body{
 	}
 	.outFont{
 		font-size: 16px;
-		
+		font-weight:700;
 	}
 	span{margin-left:-3px;}
 }
@@ -452,6 +471,12 @@ html,body{
 		top: -4.5px;
 	}
 }
+.tab-pane{
+	display: none;
+}
+.tab-pane.active{
+	display: block;
+}
 .iconMark1{
 	display: inline-block;
     width:4px;
@@ -476,12 +501,15 @@ html,body{
 	padding:2.5px 13px 6.5px 15px;
 	margin-bottom:14px;
 }
+.canvasBox{
+	.contitle {
+		margin-bottom:0;
+	}
+}
 .canvasDiv{
-	width:184px;
-	margin:12px auto;
-	height:184px;
-	border:1px solid red;
-	margin-bottom:14px;
+	width:100%;
+	margin-top: -15px;
+	height:250px;
 }
 .markList{
 
@@ -513,15 +541,16 @@ html,body{
 		background: #4cdeeb;
 	}
 	.markLi:nth-child(5) .iconLegend{
-		background: #ffac29;
+		background: #ff6529;
 	}
 	.markLi:nth-child(6) .iconLegend{
-		background: #ffe451;
+		background: #ffac29;
+		
 	}
 	.markLi:nth-child(7){
 		width:260px;
 		.iconLegend{
-			background:#64cb66;
+			background: #ffe451;
 		}
 	} 
 }
@@ -580,7 +609,7 @@ html,body{
 .taskTable2{
 	.tr{
 		.td:first-child{
-			width: 70px;
+			max-width: 70px;
 		}
 		.td:last-child{
 			width: 106px;

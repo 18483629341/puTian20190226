@@ -42,7 +42,7 @@
 				<p class="iconText">排放清单</p>
 			</li>
 			<li class="themeLi">
-				<p class="icon icon_theme8"></p>
+				<p class="icon icon_theme6"></p>
 				<p class="iconText">决策支撑</p>
 			</li>
 			<li class="themeLi">
@@ -54,7 +54,7 @@
 				<p class="iconText">水环境工作台</p>
 			</li>
 			<li class="themeLi">
-				<p class="icon icon_theme6"></p>
+				<p class="icon icon_theme8"></p>
 				<p class="iconText">数据资源管理</p>
 			</li>
 		</ul>
@@ -63,7 +63,9 @@
 	<!-- 登录框 -->
 
 	<div class="main  ">
-		<div class="timeDiv"></div>
+		<div class="timeDiv">
+			<span class="icon icon_calendar"></span><span class="time">2018年5月4日 13:28:31</span> 
+		</div>
 		<div class="firstRow flexBlock">
 			<div class="listDiv insideRow">
 
@@ -174,33 +176,30 @@
 					<img src="./img/map.png" alt="">
 				</div>
 			</div>
-			<div class="listDiv ">
+			<div class="listDiv watStaListDiv" >
 				<!-- tabs -->
-				<ul class="nav nav-pills selfTabs flexBlock" role="tablist">
-					<li role="presentation" class="selfTab active">
-						<a href="#finished" role="tab" data-toggle="tab" aria-expanded="false">
+				<ul class="selfTabs flexBlock" >
+					<li class="selfTab active" data-target="finished" >
+						<a >
 							<P class="tabText">完成目标情况</P>
 						</a>
 					</li>
-					<li role="presentation" class="selfTab ">
-						<a href="#imporAnysis" role="tab" data-toggle="tab" aria-expanded="true">
+					<li class="selfTab " data-target="imporAnysis" >
+						<a >
 							<P class="tabText">重点流域/区域分析</P>
 						</a>
 					</li>
-					<li role="presentation" class="selfTab ">
-						<a href="#imporBase" role="tab" data-toggle="tab" aria-expanded="true">
+					<li class="selfTab "  data-target="imporBase" >
+						<a>
 							<P class="tabText">重点关注断面</P>
 						</a>
-					</li>
-					<li role="presentation" class="disabled selfTab flex1">
-						<!-- <a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a> -->
 					</li>
 
 				</ul>
 
 				<!-- Tab panes -->
 				<div class="tab-content">
-					<div role="tabpanel " class="tab-pane  active finished" id="finished">
+					<div class="tab-pane active" id="finished">
 						<p class="contitle">
 							<span>2018年1月-8月</span>各县、区国考断面目标完成情况
 						</p>
@@ -257,10 +256,10 @@
 							<span class="iconText">考核目标</span>
 						</p>
 					</div>
-					<div role="tabpanel" class="tab-pane RightTableDiv" id="imporAnysis">
+					<div class="tab-pane " id="imporAnysis">
 						2
 					</div>
-					<div role="tabpanel" class="tab-pane RightTableDiv" id="imporBase">
+					<div  class="tab-pane " id="imporBase">
 						3
 					</div>
 				</div>
@@ -287,13 +286,13 @@
 					<div class="flexBlock canvasCon">
 						<div class="flex1 canvasBox">
 							<p class="contitle">已启动项目</p>
-							<div class="canvasDiv" id="startedPro"></div>
 						</div>
 						<div class="flex1 canvasBox">
 							<p class="contitle">已完成项目</p>
-							<div class="canvasDiv" id="finishedPro"></div>
 						</div>
+						
 					</div>
+					<div class="canvasDiv" id="StatusCanvas"></div>
 					<ul class="markList">
 						<li class="markLi">
 							<span class="iconLegend"></span>工业污染防治方法</li>
@@ -339,21 +338,21 @@
 							<tbody class="tbody">
 								<tr class="tr">
 									<td class="td">1</td>
-									<td class="td">工作任务</td>
+									<td class="td">东圳水库管理局巡查员xx上报常太镇过溪村发现一户养殖鸡鸭约三十羽</td>
 									<td class="td hrefTd">
 										<a href="#">详情</a>
 									</td>
 								</tr>
 								<tr class="tr">
 									<td class="td">2</td>
-									<td class="td">工作任务</td>
+									<td class="td">东圳水库管理局巡查员xx上报常太镇过溪村发现一户养殖鸡鸭约三十羽</td>
 									<td class="td hrefTd">
 										<a href="#">详情</a>
 									</td>
 								</tr>
 								<tr class="tr">
 									<td class="td">3</td>
-									<td class="td">工作任务</td>
+									<td class="td">东圳水库管理局巡查员xx上报常太镇过溪村发现一户养殖鸡鸭约三十羽</td>
 									<td class="td hrefTd">
 										<a href="#">详情</a>
 									</td>
@@ -371,7 +370,7 @@
 							</p>
 						</div>
 
-						<table class="taskTable taskTable1">
+						<table class="taskTable taskTable2">
 							<thead class="thead">
 								<tr class="tr">
 									<td class="td">序号</td>
@@ -386,9 +385,9 @@
 								<tr class="tr">
 									<td class="td">1</td>
 									<td class="td">企业执法监督</td>
-									<td class="td">当年任务</td>
-									<td class="td">计划开始时间</td>
-									<td class="td">计划完成时间</td>
+									<td class="td">企业执法监管完成“散乱污”企业年度整治任务</td>
+									<td class="td">2019年3月1日</td>
+									<td class="td">2019年3月31日</td>
 									<td class="td hrefTd">
 										<a href="#">详情</a>
 									</td>
@@ -396,9 +395,9 @@
 								<tr class="tr">
 									<td class="td">2</td>
 									<td class="td">企业执法监督</td>
-									<td class="td">当年任务</td>
-									<td class="td">计划开始时间</td>
-									<td class="td">计划完成时间</td>
+									<td class="td">企业执法监管完成“散乱污”企业年度整治任务</td>
+									<td class="td">2019年3月1日</td>
+									<td class="td">2019年3月31日</td>
 									<td class="td hrefTd">
 										<a href="#">详情</a>
 									</td>
@@ -406,9 +405,9 @@
 								<tr class="tr">
 									<td class="td">3</td>
 									<td class="td">企业执法监督</td>
-									<td class="td">当年任务</td>
-									<td class="td">计划开始时间</td>
-									<td class="td">计划完成时间</td>
+									<td class="td">企业执法监管完成“散乱污”企业年度整治任务</td>
+									<td class="td">2019年3月1日</td>
+									<td class="td">2019年3月31日</td>
 									<td class="td  hrefTd">
 										<a href="#">详情</a>
 									</td>
