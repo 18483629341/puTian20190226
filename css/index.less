@@ -251,7 +251,7 @@ html,body{
 	 color: rgb(67,152,238);
 	 .moreIcon{
 		 //background: @sprite;
-		 background-position: -36px -32px;
+		// background-position: -36px -32px;
 	 }
  }
  
@@ -394,7 +394,7 @@ html,body{
 		color:@warnColor;
 	}
 	.point{
-		width:2.5%;
+		width:3%;
 		background: @warnColor;
 	}
 	.iconMark.lastYear{
@@ -466,12 +466,114 @@ html,body{
 	margin-bottom:14px;
 }
 .canvasDiv{
-	width:108px;
-	height:108px;
+	width:184px;
+	margin:12px auto;
+	height:184px;
 	border:1px solid red;
 	margin-bottom:14px;
 }
 .markList{
-	
+
+	.markLi{
+		width: 205px;
+		height:30px;
+		line-height: 28px;
+		display: inline-block;
+	}
+	.iconLegend{
+		display: inline-block;
+		width:18px;
+		height:10px;
+		position: relative;
+		// top:10px;
+		border-radius:2px;
+		margin-right:10px;
+	}
+	.markLi:nth-child(1) .iconLegend{
+		background:#64cb66;
+	}
+	.markLi:nth-child(2) .iconLegend{
+		background: #a6b7ff;
+    }
+   .markLi:nth-child(3) .iconLegend{
+		background: #158eff;
+	}
+	.markLi:nth-child(4) .iconLegend{
+		background: #4cdeeb;
+	}
+	.markLi:nth-child(5) .iconLegend{
+		background: #ffac29;
+	}
+	.markLi:nth-child(6) .iconLegend{
+		background: #ffe451;
+	}
+	.markLi:nth-child(7){
+		width:260px;
+		.iconLegend{
+			background:#64cb66;
+		}
+	} 
 }
-/*第二行第一列的样式 end*/
+/*第二行第一列的样式 end ****/
+/*第二行第二列的样式 start ****/
+.unfinish{
+	padding-top:16px;
+	.tableCon{
+		position: relative;
+	}
+	.contitle{
+		text-align: left;
+		margin-bottom: 0;	
+	}
+}
+.tableCon{
+	margin-bottom: 15px;
+	.moreDiv{
+		right: 0;
+		height: 24px;
+		padding: 3px 0 3px 0;
+	}
+	.more{
+		padding-right:0;
+	}
+}
+.taskTable{
+	width: 100%;
+	text-align: center;
+	.thead{
+		background: #f6faf7;
+	}
+    .td{
+		height:36px;
+		border: 1px solid #efefef;
+	}
+	.hrefTd>a{
+		color:#35994a;
+	}
+	.tbody{
+       .tr:nth-child(2n){
+		   background: #fafcfb;
+	   } 
+	}
+}
+.taskTable1{
+	.tr{
+		.td:first-child{
+			width: 106px;
+		}
+		.td:last-child{
+			width: 120px;
+		}
+	}
+}
+.taskTable2{
+	.tr{
+		.td:first-child{
+			width: 70px;
+		}
+		.td:last-child{
+			width: 106px;
+		}
+	}
+}
+/*第二行第二列的样式 end ****/

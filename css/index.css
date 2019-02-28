@@ -225,9 +225,6 @@ body {
 .more:hover {
   color: #4398ee;
 }
-.more:hover .moreIcon {
-  background-position: -36px -32px;
-}
 .RightTableDiv {
   padding: 0 20px!important;
   display: none;
@@ -361,7 +358,7 @@ body {
   color: #ed654a;
 }
 .badType .point {
-  width: 2.5%;
+  width: 3%;
   background: #ed654a;
 }
 .badType .iconMark.lastYear {
@@ -430,9 +427,100 @@ body {
   margin-bottom: 14px;
 }
 .canvasDiv {
-  width: 108px;
-  height: 108px;
+  width: 184px;
+  margin: 12px auto;
+  height: 184px;
   border: 1px solid red;
   margin-bottom: 14px;
 }
-/*第二行第一列的样式 end*/
+.markList .markLi {
+  width: 205px;
+  height: 30px;
+  line-height: 28px;
+  display: inline-block;
+}
+.markList .iconLegend {
+  display: inline-block;
+  width: 18px;
+  height: 10px;
+  position: relative;
+  border-radius: 2px;
+  margin-right: 10px;
+}
+.markList .markLi:nth-child(1) .iconLegend {
+  background: #64cb66;
+}
+.markList .markLi:nth-child(2) .iconLegend {
+  background: #a6b7ff;
+}
+.markList .markLi:nth-child(3) .iconLegend {
+  background: #158eff;
+}
+.markList .markLi:nth-child(4) .iconLegend {
+  background: #4cdeeb;
+}
+.markList .markLi:nth-child(5) .iconLegend {
+  background: #ffac29;
+}
+.markList .markLi:nth-child(6) .iconLegend {
+  background: #ffe451;
+}
+.markList .markLi:nth-child(7) {
+  width: 260px;
+}
+.markList .markLi:nth-child(7) .iconLegend {
+  background: #64cb66;
+}
+/*第二行第一列的样式 end ****/
+/*第二行第二列的样式 start ****/
+.unfinish {
+  padding-top: 16px;
+}
+.unfinish .tableCon {
+  position: relative;
+}
+.unfinish .contitle {
+  text-align: left;
+  margin-bottom: 0;
+}
+.tableCon {
+  margin-bottom: 15px;
+}
+.tableCon .moreDiv {
+  right: 0;
+  height: 24px;
+  padding: 3px 0 3px 0;
+}
+.tableCon .more {
+  padding-right: 0;
+}
+.taskTable {
+  width: 100%;
+  text-align: center;
+}
+.taskTable .thead {
+  background: #f6faf7;
+}
+.taskTable .td {
+  height: 36px;
+  border: 1px solid #efefef;
+}
+.taskTable .hrefTd > a {
+  color: #35994a;
+}
+.taskTable .tbody .tr:nth-child(2n) {
+  background: #fafcfb;
+}
+.taskTable1 .tr .td:first-child {
+  width: 106px;
+}
+.taskTable1 .tr .td:last-child {
+  width: 120px;
+}
+.taskTable2 .tr .td:first-child {
+  width: 70px;
+}
+.taskTable2 .tr .td:last-child {
+  width: 106px;
+}
+/*第二行第二列的样式 end ****/
