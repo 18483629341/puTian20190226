@@ -1,5 +1,5 @@
 $(function () {
-	HautoFit();
+	//HautoFit();
 })
 window.onresize = function () {
 	HautoFit();
