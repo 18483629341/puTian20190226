@@ -183,13 +183,19 @@
 				<!-- tabs -->
 				<ul class="nav nav-pills selfTabs flexBlock" role="tablist">
 					<li role="presentation" class="selfTab active">
-						<a href="#finished" role="tab" data-toggle="tab" aria-expanded="false">完成目标情况</a>
+						<a href="#finished" role="tab" data-toggle="tab" aria-expanded="false">
+							<P class="tabText">完成目标情况</P>
+						</a>
 					</li>
 					<li role="presentation" class="selfTab ">
-						<a href="#imporAnysis" role="tab" data-toggle="tab" aria-expanded="true">重点流域/区域分析</a>
+						<a href="#imporAnysis" role="tab" data-toggle="tab" aria-expanded="true">
+							<P class="tabText">重点流域/区域分析</P>
+						</a>
 					</li>
 					<li role="presentation" class="selfTab ">
-						<a href="#imporBase" role="tab" data-toggle="tab" aria-expanded="true">重点关注断面</a>
+						<a href="#imporBase" role="tab" data-toggle="tab" aria-expanded="true">
+							<P class="tabText">重点关注断面</P>
+						</a>
 					</li>
 					<li role="presentation" class="disabled selfTab flex1">
 						<!-- <a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a> -->
@@ -199,7 +205,7 @@
 
 				<!-- Tab panes -->
 				<div class="tab-content">
-					<div role="tabpanel " class="tab-pane RightTableDiv active" id="finished">
+					<div role="tabpanel " class="tab-pane  active finished" id="finished">
 						<p class="contitle">
 							<span>2018年1月-8月</span>各县、区国考断面目标完成情况
 						</p>
@@ -208,11 +214,10 @@
 								国考断面共计
 								<span class='outFont'>86</span>个断面，
 								<span>1月-8月</span>水质优良率为
-								<span class='outFont'>85%</span>
-								，超过目标
-								<span class='outFont'>5.9</span>个百分点;劣质Ⅴ类水体占比
+								<span class='outFont'>85%</span>，超过目标
+								<span class='outFont'>5.9</span>个百分点；劣质Ⅴ类水体占比
 								<span class='outFont'>2.5%</span>，超过目标
-								<span class='outFont'>2.5</span>个百分点
+								<span class='outFont'>2.5</span>个百分点。
 							</p>
 						</div>
 						<div class="panelGraphBox goodType">
@@ -226,9 +231,11 @@
 								<div class="pointBack">
 									<div class="point"></div>
 								</div>
-								<span class="iconMark lastYear"></span>
-								<span class="iconMark wantPoint"></span>
-								<span class="promptBox">88.9%</span>
+								<div class="iconMark lastYear"></div>
+								<div class="iconMark wantPoint"></div>
+								<div class="promptBox">
+									<span class="promptText">88.9%</span>
+								</div>
 							</div>
 						</div>
 						<div class="panelGraphBox badType">
@@ -243,12 +250,16 @@
 								</div>
 								<span class="iconMark lastYear"></span>
 								<span class="iconMark wantPoint"></span>
-								<span class="promptBox">88.9%</span>
+								<div class="promptBox">
+									<span class="promptText">0%</span>
+								</div>
 							</div>
 						</div>
-						<p>
-							<span class="iconMark1 lastYear"></span>去年同期值
-							<span class="iconMark1 wantPoint"></span>考核目标
+						<p class="iconMarkP">
+							<span class="iconMark1 lastYear"></span>
+							<span class="iconText">去年同期值</span>
+							<span class="iconMark1 wantPoint"></span>
+							<span class="iconText">考核目标</span>
 						</p>
 					</div>
 					<div role="tabpanel" class="tab-pane RightTableDiv" id="imporAnysis">
@@ -267,14 +278,17 @@
 					<div class="listTitle">水环境防治工程调度情况</div>
 				</div>
 				<div class="listContent projectStatus" id="projectStatus">
-					<p class="textP">
-						2019年审批项目总数
-						<span class='outFont'>78</span>个，其中已启动
-						<span class='outFont'>78</span>个，其中已启动率
-						<span class='outFont'>100%</span>，目前按照时序进度完成
-						<span class='outFont'>38</span>个，完成率
-						<span class='outFont'>48%</span>.
-					</p>
+					<div class="panelDesc">
+						<p class="textP">
+							2019年审批项目总数
+							<span class='outFont'>78</span>个，其中已启动
+							<span class='outFont'>78</span>个，其中已启动率
+							<span class='outFont'>100%</span>，目前按照时序进度完成
+							<span class='outFont'>38</span>个，完成率
+							<span class='outFont'>48%</span>.
+						</p>
+					</div>
+
 					<div class="flexBlock canvasCon">
 						<div class="flex1 canvasBox">
 							<p class="contitle">已启动项目</p>
@@ -320,7 +334,6 @@
 								</a>
 							</p>
 						</div>
-
 						<table class="taskTable taskTable1">
 							<thead>
 								<tr>
