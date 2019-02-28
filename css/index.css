@@ -1,5 +1,4 @@
 @import 'common.css';
-html,
 body {
   min-width: 1920px;
   background-color: #f5f7f5;
@@ -476,6 +475,31 @@ body {
   width: 100%;
   margin-top: -15px;
   height: 250px;
+}
+.canvasCon {
+  overflow: hidden;
+  position: relative;
+}
+.canvasCon .leftCenter,
+.canvasCon .rightCenter {
+  position: absolute;
+  width: 50%;
+  height: 36px;
+  line-height: 34px;
+  top: 50%;
+  margin-top: -7.5px;
+  transform: translateY(-50%);
+  text-align: center;
+}
+.canvasCon .leftCenter {
+  left: 0;
+}
+.canvasCon .rightCenter {
+  left: 50%;
+}
+.canvasCon .outFont {
+  font-size: 30px;
+  font-weight: 700;
 }
 .markList .markLi {
   width: 205px;

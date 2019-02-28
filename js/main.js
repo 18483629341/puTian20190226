@@ -18,7 +18,7 @@ var swidth = null;
 var W = null;
 //header部分里面的所有元素的宽高全自适应方法
 
-function autoFit() {
+function HautoFit() {
 	swidth = $(window).width();
 	if (swidth > 1320 || swidth === 1320) {
 		resize();
@@ -33,32 +33,9 @@ function resize() {
 	var height = $(window).height();
 	//console.log(winratio);
     if(winratio<1){
-		$('.header').css({
-			height:150*winratio + "px"
-		});
-		$('.main').css({
-			height:529*winratio + "px",
-		});
-		$('.footer').css({
-			height:150*winratio + "px",
-			lineHeight:150*winratio-2 + "px"
-		});
-		$('.headerMain').css({
-			transform: "scale(" + winratio + ")",
-			transformOrigin: "left top",
-			height:150*winratio + "px"
-		});
-		$('.login_content').css({
-		  transform: "scale("+winratio+")",
-		  transformOrigin: "right center"
-		});
-		$('.themeBox').css({
+		$('.body1').css({
 			transform: "scale("+winratio+")",
-			transformOrigin: "left center"
+			transformOrigin: "left top"
 		});
 	}
-	
-	
-	
-	
 }

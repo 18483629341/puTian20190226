@@ -7,7 +7,7 @@
 @splitColor:#e5ebf2;
 @activeColor:#35994a;
 @sprite: url('../img/sprite.png') no-repeat;
-html,body{
+body{
 	min-width: 1920px;
 	background-color: #f5f7f5;
 }
@@ -512,6 +512,30 @@ html,body{
 	width:100%;
 	margin-top: -15px;
 	height:250px;
+}
+.canvasCon{
+	overflow: hidden;
+	position: relative;
+	.leftCenter,.rightCenter{
+		position: absolute;
+		width: 50%;
+		height: 36px;
+		line-height: 34px;
+		top: 50%;
+		margin-top: -7.5px;
+		transform: translateY(-50%);
+		text-align: center;
+	}
+	.leftCenter{
+		left: 0;
+	}
+	.rightCenter{
+		left: 50%;
+	}
+	.outFont{
+		font-size: 30px;
+		font-weight: 700;
+	}
 }
 .markList{
 

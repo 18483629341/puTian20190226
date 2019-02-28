@@ -39,16 +39,6 @@ var option1={
     toolbox: {//工具栏
         show : false
     },
-    title: {
-        x: '48%',
-        y: '33%',
-        subtext: '19%',
-        textAlign: 'center',
-        subtextStyle: {
-          fontSize: 25,
-          color: '#333333'
-        }
-      },
     calculable : true,
     series : [
         {
