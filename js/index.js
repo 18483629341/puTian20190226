@@ -1,8 +1,8 @@
 $(function () {
-	//HautoFit();
+    loadImg()
 	var Pie1=echarts.init(document.getElementById('StatusCanvas'));
     Pie1.setOption(option1);
-    tabToggle()
+    tabToggle();
 })
 window.onresize = function () {
 	HautoFit();
@@ -106,12 +106,3 @@ var option1={
         }
     ]
 };
-function tabToggle(){
-    $('body').on('click','.selfTab',function(){
-        var targetId=$(this).attr('data-target');
-        $('.watStaListDiv .selfTab').removeClass('active');
-        $('.watStaListDiv .tab-pane').removeClass('active');
-        $(this).addClass('active');
-        $('#'+targetId).addClass('active');
-    })
-}
