@@ -1,7 +1,7 @@
 $(function () {
     loadImg()
-	var Pie1=echarts.init(document.getElementById('StatusCanvas'));
-    Pie1.setOption(option1);
+	var Pie=echarts.init(document.getElementById('StatusCanvas'));
+    Pie.setOption(option);
     tabToggle();
 })
 window.onresize = function () {
@@ -28,13 +28,13 @@ var finishedData=[   //!!!!!需要后台传入的数据
 	{value:15, name:'重点流域及库区生态环境保护方面'},
 	//{value:40, name:'rose8'}
 ];
-var option1={
+var option={
     color:['#64cb66','#a6b7ff','#158eff','#4cdeeb','#ff6529','#ffac29','#ffe451'],
     tooltip : {//提示框
         show : true,
         trigger: 'item',
         //formatter: "{a} <br/>{b} : {c} ({d}%)",
-        formatter: "{b} : {c} ({d}%)"
+        formatter: "{b} : {c}个(占比{d}%)"
     },
     toolbox: {//工具栏
         show : false
@@ -96,3 +96,24 @@ var option1={
         }
     ]
 };
+// $('.iconMark').mouseover(function(){
+//     console.log(1);
+//     var value=Math.floor($(this).attr('data-value')).toFixed(1);
+//     console.log(2,value);
+//     if(value>78){
+//         $(this).siblings('.promptBox').addClass('right');
+//         // $(this).siblings('.promptBox').css({right:(Math.floor(100-value).toFixed(1))/100})
+//         $(this).siblings('.promptBox').css({right:Math.floor(100-value).toFixed(1)+'%'})
+//     }else{
+//         $(this).siblings('.promptBox').removeClass('right');
+//         $(this).siblings('.promptBox').css({left:Math.floor(value).toFixed(1)+'%'})
+//     }
+//     console.log(3,value);
+//     $(this).siblings('.promptBox').addClass('active');
+//     $(this).siblings('.promptBox').find('.promptText').text(value+'%');
+//     console.log(4,value);
+// });
+// $('.iconMark').mouseout(function(){
+//     console.log('mouseout');
+//     $(this).siblings('.promptBox').removeClass('active');
+// });

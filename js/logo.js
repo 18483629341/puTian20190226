@@ -1,4 +1,4 @@
-//前端验证
+/*前端验证*/
 let postObj = {
 	user: "",
 	password: "",
