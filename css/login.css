@@ -10,9 +10,9 @@
   height: 100%;
 }
 .header img {
-  width: 719px;
+  width: 712px;
   height: auto;
-  margin-top: 40px;
+  margin-top: 41px;
 }
 .main {
   flex: 1;
@@ -97,6 +97,11 @@
 .login_content .login_area .inputP:hover {
   border: 1px solid #5bac61;
 }
+.login_content .login_area .inputP.active input,
+.login_content .login_area .inputP:hover input {
+  font-size: 14px;
+  letter-spacing: 1px;
+}
 .login_content .login_header {
   width: 100%;
   height: 10%;
@@ -142,11 +147,18 @@
 .checkBox.active {
   background: url(../img/rdo_on.png) no-repeat;
 }
-input::-webkit-input-placeholder {
+input::-O-input-placeholder {
   /* placeholder颜色  */
-  color: #5a5a5a;
-  font-size: 14px;
-  letter-spacing: 1px;
+  color: #D6D6D6;
+}
+input::-ms-input-placeholder {
+  color: #D6D6D6;
+}
+input::-webkit-input-placeholder {
+  color: #D6D6D6;
+}
+input::-moz-input-placeholder {
+  color: #D6D6D6;
 }
 input::-internal-autofill-selected {
   background-color: #fff!important;

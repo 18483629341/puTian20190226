@@ -15,9 +15,9 @@
         height:100%;
     }
     img {
-        width: 719px;
+        width: 712px;
         height: auto;
-        margin-top: 40px;
+        margin-top: 41px;
     }
 }
 .main {
@@ -96,6 +96,8 @@
             border:1px solid @activeBorder;
             input{
                // border-left:1px solid @activeBorder;
+               font-size: 14px;
+               letter-spacing: 1px;
             }
             
         }
@@ -162,11 +164,19 @@
 .checkBox.active{
     background: url(../img/rdo_on.png) no-repeat;
 }
-input::-webkit-input-placeholder {
+input::-O-input-placeholder {
     /* placeholder颜色  */
-    color: #5a5a5a;
-    font-size: 14px;
-    letter-spacing: 1px;
+    color: #D6D6D6;
+}
+input::-ms-input-placeholder {
+    color: #D6D6D6;
+}
+input::-webkit-input-placeholder {
+    color: #D6D6D6;
+}
+input::-moz-input-placeholder {
+    color: #D6D6D6;
+    
 }
 input::-internal-autofill-selected{
     background-color: #fff!important;

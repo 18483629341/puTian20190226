@@ -21,14 +21,14 @@ var W = null;
 function HautoFit() {
 	swidth = $(window).width();
 	if (swidth > 1320 || swidth === 1320) {
-		resize();
+		Hresize();
 	}
 }
 
 //部分模块等比缩放
 
 
-function resize() {
+function Hresize() {
 	var winratio = $(window).width() / 1920;
 	var height = $(window).height();
 	//console.log(winratio);
