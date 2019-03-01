@@ -161,10 +161,13 @@ body{
 	.downIcon{
 		width:8px;
 		height:6px;
-		background-position: -50px 0;
+		background:url('../img/nav_xl.png') no-repeat;
 		position: relative;
 		top: -2px;
 		cursor: pointer;
+	}
+	.downIcon:hover{
+        transform:rotate(-180deg);
 	}
 }
 /***main***/
@@ -251,8 +254,7 @@ body{
 	 color:#666;
 	 padding-right:20px;
 	text-align: right;
-	
-	 .moreIcon{
+	.moreIcon{
 		 display: inline-block;
 		 width: 11px;
 		 height:10px;
@@ -272,8 +274,8 @@ body{
  .more:hover{
 	 color: rgb(67,152,238);
 	 .moreIcon{
-		 //background: @sprite;
-		// background-position: -36px -32px;
+		 background: url('../img/more2_hover.png') no-repeat;
+		//background-position: -36px -32px;
 	 }
  }
  
@@ -433,7 +435,7 @@ body{
 	width: 62px;
 	height: 38px;
 	background: @sprite no-repeat;
-	background-position: -269px 0;
+	background-position: -268px -2px;
     padding-top: 8px;
 	text-align: center;
 	top: 32px;
@@ -442,12 +444,13 @@ body{
 		width: 60px;
 		color:#ed654a;
 		height:30px;
-		line-height:30px;
+		line-height:23.5px;
 		text-align: center;
+		font-weight: 700;
 	}	
 }
 .promptBox.right{
-	background-position: -330px 0;
+	background-position: -330px -2px;
 }
 .promptBox.active{
 	display: block;
@@ -515,8 +518,8 @@ body{
 	}
 }
 .canvasDiv{
-	border: 1px solid red;
-	width:120%;
+	//border: 1px solid red;
+	width:100%;
 	margin-top: -15px;
 	height:250px;
 }
@@ -622,6 +625,7 @@ body{
 	}
 	.hrefTd>a{
 		color:#35994a;
+		border-bottom: 1px solid #35994a;
 	}
 	.tbody{
        .tr:nth-child(2n){

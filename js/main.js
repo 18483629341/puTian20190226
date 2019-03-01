@@ -14,6 +14,8 @@ function loadImg(){
 
 	});
 }
+
+
 var swidth = null;
 var W = null;
 //header部分里面的所有元素的宽高全自适应方法

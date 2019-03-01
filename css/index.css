@@ -153,10 +153,13 @@ body {
 .headerRight .downIcon {
   width: 8px;
   height: 6px;
-  background-position: -50px 0;
+  background: url('../img/nav_xl.png') no-repeat;
   position: relative;
   top: -2px;
   cursor: pointer;
+}
+.headerRight .downIcon:hover {
+  transform: rotate(-180deg);
 }
 /***main***/
 .listHeader {
@@ -247,6 +250,9 @@ body {
 }
 .more:hover {
   color: #4398ee;
+}
+.more:hover .moreIcon {
+  background: url('../img/more2_hover.png') no-repeat;
 }
 .RightTableDiv {
   padding: 0 20px!important;
@@ -402,7 +408,7 @@ body {
   width: 62px;
   height: 38px;
   background: url('../img/sprite.png') no-repeat no-repeat;
-  background-position: -269px 0;
+  background-position: -268px -2px;
   padding-top: 8px;
   text-align: center;
   top: 32px;
@@ -412,11 +418,12 @@ body {
   width: 60px;
   color: #ed654a;
   height: 30px;
-  line-height: 30px;
+  line-height: 23.5px;
   text-align: center;
+  font-weight: 700;
 }
 .promptBox.right {
-  background-position: -330px 0;
+  background-position: -330px -2px;
 }
 .promptBox.active {
   display: block;
@@ -481,8 +488,7 @@ body {
   margin-bottom: 0;
 }
 .canvasDiv {
-  border: 1px solid red;
-  width: 120%;
+  width: 100%;
   margin-top: -15px;
   height: 250px;
 }
@@ -585,6 +591,7 @@ body {
 }
 .taskTable .hrefTd > a {
   color: #35994a;
+  border-bottom: 1px solid #35994a;
 }
 .taskTable .tbody .tr:nth-child(2n) {
   background: #fafcfb;
